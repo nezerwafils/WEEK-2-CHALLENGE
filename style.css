@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
+  /* font-size: 1.8rem; */
 }
+
 body {
   position: relative;
 }
@@ -17,8 +19,11 @@ body {
 }
 .card1 {
   width: 1000px;
-  height: 100vh;
-  /* border: 2px solid black; */
+  /* height: 100vh; */
+  background-color: rgba(70, 22, 142, 0.46);
+  width: 1000px;
+  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 70%);
   border-radius: 20px;
   margin: 4rem auto;
 }
@@ -29,7 +34,7 @@ body {
   /* border: 2px solid black; */
   margin: 2.4rem auto;
   border-radius: 20px;
-  background-color: rgba(70, 22, 142, 0.46);
+  /* background-color: rgba(70, 22, 142, 0.46); */
 }
 .header {
   padding-top: 1rem;
@@ -69,6 +74,7 @@ body {
 }
 .sec1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: centre;
   margin-top: 4rem;
@@ -85,7 +91,7 @@ span {
   color: rgba(255, 255, 255, 0.859);
 }
 .card-side {
-  width: 50%;
+  width: 40%;
   height: 300px;
   border: 1px solid white;
   background-color: white;
@@ -137,6 +143,7 @@ a {
 }
 .boxes {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: space-around;
   gap: 2rem;
@@ -172,6 +179,7 @@ h1 {
 }
 .bill {
   border: 1px solid rgb(252, 68, 68);
+  width: 25%;
 }
 .box1 {
   text-align: left;
@@ -191,6 +199,7 @@ h1 {
 .section3 {
   color: white;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -264,6 +273,7 @@ h1 {
 
 .price {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -274,6 +284,7 @@ h1 {
   border: 1px solid red;
   border-radius: 10px;
   padding-bottom: 2rem;
+  width: 25%;
 }
 .size h2,
 p {
@@ -305,6 +316,7 @@ sup {
 }
 .othercards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -317,10 +329,10 @@ sup {
   gap: 2rem;
   align-items: center;
 }
-.white {
+.whit {
   /* margin-left: 2rem; */
-  padding: 2rem;
-
+  padding: 3rem;
+  width: 26%;
   background-color: white;
 }
 .rate h2 {
@@ -373,9 +385,11 @@ sup {
   justify-content: first baseline;
   align-items: baseline;
   gap: 0.3rem;
+  width: 14.5%;
 }
 .d-center2 {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
 }
 .d-center3 {
@@ -393,4 +407,100 @@ sup {
 .rowe,
 .d-center1 p {
   justify-content: center;
+}
+/* html {
+  font-size: 62.5%;
+} */
+@media (max-width: 480px) {
+  html {
+    font-size: 40%;
+    position: relative;
+  }
+  .header {
+    width: 100%;
+  }
+  .desc {
+    width: 50%;
+  }
+  .card1 {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 73%);
+  }
+  .card-side {
+    width: 70%;
+  }
+
+  .sec2 {
+    width: 45.8%;
+    height: 770px;
+    clip-path: polygon(0 0, 100% 4.7%, 100% 80%, 0 72%);
+    margin-top: -38rem;
+  }
+  .sec3 {
+    width: 45.8%;
+    clip-path: polygon(0 0, 100% 7.9%, 100% 80%, 0 72%);
+    margin-top: -33.7rem;
+    height: 770px;
+  }
+  .section3 {
+    padding-top: 4rem;
+  }
+  .bill {
+    width: 60%;
+  }
+  .desc3 {
+    margin-top: 5rem;
+    width: 45.8%;
+    /* text-align: center; */
+  }
+  .card-side3 {
+    margin-top: 4rem;
+    height: 40vh;
+    width: 40vw;
+  }
+  .sec4 {
+    width: 45.8%;
+
+    clip-path: polygon(0 0, 100% 2.9%, 100% 75%, 0 72%);
+    margin-top: -33.7rem;
+    /* height: 900px; */
+  }
+  .size {
+    width: 60%;
+  }
+  .sec5 {
+    width: 45.8%;
+
+    clip-path: polygon(0 0, 100% 2.9%, 100% 100%, 0 100%);
+    margin-top: -64.7rem;
+    height: 1000px;
+  }
+  .whit {
+    width: 50%;
+  }
+  .raw {
+    width: 80%;
+  }
+  .footer {
+    width: 45.8%;
+    height: 700px;
+
+    padding-top: ;
+    /* margin-top: -60.7rem; */
+  }
+  .d-center1 {
+    width: 80%;
+  }
+  .card {
+    height: auto;
+  }
+  .sec1 {
+    background-color: none;
+  }
+  .more {
+    position: absolute;
+    left: 89%;
+    bottom: 17.5%;
+    width: 80%;
+  }
 }
